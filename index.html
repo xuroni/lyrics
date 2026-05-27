@@ -58,17 +58,23 @@
   }
   .brand-logo-wrapper {
     max-width: 140px;
-    display: flex; border-radius:50%;
-    align-items: center;border:2px solid var(--border-color);
+    display: flex; 
     
   }
   .brand-logo {
-    width: 100%; border-radius:50%;
-    height: auto;filter: grayscale(100%);
-    max-height: 40px;
+    width: 100%; 
+    height: auto;filter: grayscale(50%);
+    margin:0; padding:0;
     object-fit: contain;
   }
   
+  .brand-logo::after{
+      content: "by ";
+  font-weight:100; margin-left:4px;
+  color:#777;font-size:11px;
+      
+      
+  }
   /* Modern Compact Social Icons Row */
   .social-connect-bar {
     display: flex;
@@ -139,14 +145,15 @@
     margin-bottom: 24px;
   }
   .sitemap-search-input {
+  margin-bottom:10px;
     width: 100%;
     padding: 15px 16px 15px 46px;
     font-size: 15px;
     font-family: var(--font-stack);
     color: var(--text-main);
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
+    border: 7px double var(--border-color);
+    border-radius:30px;
     box-shadow: var(--shadow-sm);
     box-sizing: border-box;
     outline: none;
@@ -164,7 +171,7 @@
   .sitemap-search-icon {
     position: absolute;
     left: 16px;
-    top: 50%;
+    top: 41%;
     transform: translateY(-50%);
     width: 18px;
     height: 18px;
@@ -311,7 +318,7 @@
   <header class="brand-header">
     <div class="brand-logo-wrapper">
       <!-- PLACE YOUR IMAGE LOGO URL IN THE SRC BELOW -->
-      <img src="https://i.ibb.co/W457x2QS/IMG-20260420-172501.webp" alt="Gauranga" class="brand-logo">
+      <h2 class="brand-logo">Xuroni</h2>
     </div>
     
     <div class="social-connect-bar">
@@ -324,11 +331,12 @@
         <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
       </a>
       <!-- YouTube -->
-      <a href="https://youtube.com/@xuroni" target="_blank" class="social-icon-btn" aria-label="YouTube">
-        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-      </a>
+      
     </div>
   </header>
+  
+<a href="https://facebook.com/gauranga.info"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhypmkVKgqJKe28n8HT0kAu3GqXQ7Bs58xRNXtOCQAS9OysMrBrpFr_CgmWa0pKc_2kxQlxVrHCDmolXGWUxO5Jnsv2l3mL9AuMxgOeB4vyP6ZdT0_AQMAjYFo8IajJycTBB_8jQZTNCNdYEAZIb78_01Vpw_StWjaTa4GQP7d-2IxPLlrDwj3OJ331GhI/s1600/1000019069.jpg" alt="gauranga" border="0" width='100%'/></a>
+
 
   <div class="sitemap-header">
     <p id="sitemap-meta" style="display:none">Loading structured content...</p>
@@ -336,7 +344,7 @@
   
   <!-- Premium Dark Search Bar Component -->
   <div class="sitemap-search-wrapper" id="search-wrapper" style="display: none;">
-    <input type="text" id="sitemap-search" class="sitemap-search-input" placeholder="Search">
+    <input type="text" id="sitemap-search" class="sitemap-search-input" placeholder="Search Artists Songs">
     <svg class="sitemap-search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
   </div>
   
